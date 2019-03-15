@@ -38,12 +38,12 @@ function selecteasymode()
     var two=document.querySelectorAll(".two");
     for(var i=0;i<=2;i++)
     {
-        two[i].style.background="rgb(0, 51, 80)";   
+        two[i].style.backgroundColor="rgb(0, 51, 80)";   
     }
     var three=document.querySelectorAll(".three");
     for(var i=0;i<=2;i++)
     {
-        three[i].style.background="rgb(0, 51, 80)";   
+        three[i].style.backgroundColor="rgb(0, 51, 80)";   
     } 
     clickmainbutton();   
 }
@@ -58,7 +58,7 @@ function selectmediummode()
     var three=document.querySelectorAll(".three");
     for(var i=0;i<=2;i++)
     {
-        three[i].style.background="rgb(0, 51, 80)";   
+        three[i].style.backgroundColor="rgb(0, 51, 80)";   
     }
     clickmainbutton();   
 }
@@ -98,14 +98,14 @@ function clickmainbutton()
 
     for(var i=0;i<box.length;i++)
     {
-        box[i].style.background=colors[i];
+        box[i].style.backgroundColor=colors[i];
         box[i].addEventListener("click",clickthecolor);
     }   
 }
 
 for(var i=0;i<box.length;i++)
 {
-    box[i].style.background=colors[i];
+    box[i].style.backgroundColor=colors[i];
     box[i].addEventListener("click",clickthecolor);
 }
 
@@ -147,7 +147,7 @@ function clickthecolor()
     }
     else
     {
-        this.style.background="rgb(0, 51, 80)";  
+        this.style.backgroundColor="rgb(0, 51, 80)";  
         message.textContent="Try Again..";
     }
 }
@@ -156,7 +156,7 @@ function changetoacolour()
 {
     for(var i=0;i<diflevel;i++)
     {
-        box[i].style.background=picked_color; 
+        box[i].style.backgroundColor=picked_color; 
     }
 }
 
